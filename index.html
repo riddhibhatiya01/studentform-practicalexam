@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <div class="container">
+    <h1>Student grade form </h1>
+    <div>
+      <div class="form-details">
+        <input type="text" id="name" placeholder="Enter name" />
+      </div>
+      <div class="form-details">
+        <input type="text" id="details" placeholder="Enter details" />
+      </div>
+      <div class="form-details">
+        <button id="add-button" onclick="addRecord()">Add Data</button>
+        <button
+          id="update-button"
+          onclick="updateRecord()"
+          style="display: none"
+        >
+          Update Record
+        </button>
+      </div>
+    </div>
+    <div class="form-details">
+      <input type="text" id="search" placeholder="Seach by name" />
+    </div>
+    <h2>Given Data follow up</h2>
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Details</th>
+        <th>Date</th>
+        <th>Action</th>
+      </thead>
+      <tbody id="recordList"></tbody>
+    </table>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>
